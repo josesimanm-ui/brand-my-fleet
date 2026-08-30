@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brand My 911 — Your brand, on my Porsche.</title>
+<meta name="description" content="Your logo rides on a new Porsche 911. Eight spots per car, one car per city. Live auction.">
+<meta property="og:title" content="Your brand, on my Porsche.">
+<meta property="og:description" content="Your logo rides on a new Porsche 911. Eight spots per car, one car per city.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏁</text></svg>">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="wrap nav__inner">
+    <a class="nav__brand" href="#top">
+      <svg class="nav__mark" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M2 15.5h20M4.5 15.5c0-1.2.9-2.2 2-2.2s2 1 2 2.2M15.5 15.5c0-1.2.9-2.2 2-2.2s2 1 2 2.2"
+              fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        <path d="M3 13.2c.4-1.6 1-2.6 1.9-3.1C6.4 9.2 8.7 8.8 12 8.8s5.6.4 7.1 1.3c.9.5 1.5 1.5 1.9 3.1"
+              fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+      </svg>
+      <span id="navBrandName">Brand My 911</span>
+    </a>
+
+    <nav class="nav__links">
+      <a href="#how">How it works</a>
+      <a href="#markets">Cities</a>
+      <a href="#funding">The maths</a>
+      <a href="#why">Why it works</a>
+      <a href="#car">The car</a>
+      <a href="#spots">Brand spots</a>
+      <a href="#faq">FAQ</a>
+      <a class="nav__sister" id="sisterLink" href="index.html">The Fleet ↗</a>
+    </nav>
+
+    <div class="nav__actions">
+      <button class="iconbtn" id="themeBtn" aria-label="Toggle theme" title="Toggle theme">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.4 5.4l1.6 1.6M17 17l1.6 1.6M18.6 5.4L17 7M7 17l-1.6 1.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+      </button>
+      <a class="btn btn--dark" href="#spots">Get a spot</a>
+    </div>
+
+    <button class="iconbtn nav__burger" id="burgerBtn" aria-label="Menu">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <div class="nav__mobile" id="navMobile">
+    <a href="#how">How it works</a>
+    <a href="#markets">Cities</a>
+    <a href="#funding">The maths</a>
+    <a href="#why">Why it works</a>
+    <a href="#car">The car</a>
+    <a href="#spots">Brand spots</a>
+    <a href="#faq">FAQ</a>
+    <a id="sisterLinkM" href="index.html">The Fleet ↗</a>
+    <a class="btn btn--dark" href="#spots">Get a spot</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap">
+
+    <div class="live">
+      <span class="live__dot"></span>
+      <span class="live__label">LIVE</span>
+      <span class="live__sep">·</span>
+      <b id="watchers">—</b>&nbsp;watching now
+      <span class="live__sep">·</span>
+      <b id="visitors">—</b>&nbsp;total visitors
+    </div>
+
+    <h1 class="hero__title" id="heroTitle">Your brand, on my Porsche.</h1>
+    <p class="hero__sub" id="heroSub">One 911 per city.</p>
+
+    <div class="cities" id="cityTabs" role="tablist" aria-label="Choose a city"></div>
+    <p class="cities__car"><b id="carLine">—</b></p>
+
+    <div class="raised">
+      <div class="raised__row">
+        <span class="raised__amount" id="raisedAmount">$0</span>
+        <span class="raised__word">raised</span>
+        <span class="raised__goal">of <b id="goalAmount">$0</b> goal · <b id="pct">0%</b></span>
+      </div>
+      <div class="bar"><div class="bar__fill" id="barFill"></div></div>
+      <p class="raised__note">
+        Auction ends in <b id="countdown">—</b> · You can outbid any open spot
+      </p>
+    </div>
+
+    <!-- ===== VEHICLE + HOTSPOTS ===== -->
+    <div class="stage" id="stage">
+      <div class="stage__car" id="carHost">
+        <svg class="car" viewBox="0 0 1000 380" id="carSvg" role="img" aria-label="Porsche 911 side profile">
+          <defs>
+            <linearGradient id="gBody" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0"   stop-color="var(--paint-hi)"/>
+              <stop offset=".55" stop-color="var(--paint)"/>
+              <stop offset="1"   stop-color="var(--paint-lo)"/>
+            </linearGradient>
+            <linearGradient id="gGlass" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#5b6673"/>
+              <stop offset="1" stop-color="#222a33"/>
+            </linearGradient>
+            <radialGradient id="gShadow" cx=".5" cy=".5" r=".5">
+              <stop offset="0"   stop-color="rgba(0,0,0,.42)"/>
+              <stop offset="0.7" stop-color="rgba(0,0,0,.13)"/>
+              <stop offset="1"   stop-color="rgba(0,0,0,0)"/>
+            </radialGradient>
+          </defs>
+
+          <ellipse cx="515" cy="333" rx="425" ry="20" fill="url(#gShadow)"/>
+
+          <path class="car__body" d="
+            M 72,290
+            C 60,258 58,224 70,200
+            L 104,190
+            C 156,182 214,174 272,163
+            C 344,136 400,114 470,108
+            L 566,106
+            C 616,112 660,130 694,152
+            C 762,157 830,161 878,168
+            C 918,176 946,192 956,214
+            C 964,234 962,264 952,290
+            L 844,290
+            C 844,180 712,180 712,290
+            L 368,290
+            C 368,176 236,176 236,290
+            Z" fill="url(#gBody)"/>
+
+          <path class="car__glass" d="
+            M 692,152
+            C 660,131 612,113 563,108
+            L 476,110
+            C 404,122 342,142 286,160
+            Z" fill="url(#gGlass)"/>
+          <path d="M 500,110 L 490,158" stroke="var(--paint-lo)" stroke-width="7" stroke-linecap="round" opacity=".9"/>
+          <path d="M 502,162 C 504,205 506,250 504,286" fill="none" stroke="rgba(0,0,0,.2)" stroke-width="2.4"/>
+          <rect x="550" y="178" width="34" height="8" rx="4" fill="rgba(0,0,0,.32)"/>
+          <path d="M 680,150 l 30,-4 c 8,-1 12,3 10,8 l -2,6 -34,2 z" fill="var(--paint-lo)"/>
+
+          <path d="M 368,290 L 712,290 L 712,279 L 368,279 Z" fill="rgba(0,0,0,.26)"/>
+
+          <g opacity=".38" stroke="rgba(0,0,0,.6)" stroke-width="3.2" stroke-linecap="round">
+            <path d="M 160,209 L 246,196"/><path d="M 162,219 L 248,206"/><path d="M 164,229 L 250,216"/>
+          </g>
+
+          <path d="M 78,190 C 132,183 190,175 248,164 L 250,150
+                   C 190,161 130,170 76,177 C 72,181 73,187 78,190 Z" fill="var(--paint-lo)"/>
+
+          <path d="M 64,204 C 90,200 116,195 140,190 L 142,204 C 118,209 90,214 66,218 Z" fill="#cc1f2c"/>
+          <path d="M 64,204 C 90,200 116,195 140,190 L 141,196 C 117,201 90,206 65,210 Z" fill="#f0525e" opacity=".65"/>
+
+          <ellipse cx="906" cy="199" rx="25" ry="23" fill="#f2f6fa"/>
+          <ellipse cx="906" cy="199" rx="12" ry="11" fill="#93a6ba"/>
+          <path d="M 902,252 C 924,251 942,255 950,262 L 946,271 C 932,266 918,263 902,263 Z" fill="rgba(0,0,0,.4)"/>
+          <path d="M 886,285 C 916,283 940,282 951,285 L 949,293 C 932,294 908,294 886,293 Z" fill="rgba(0,0,0,.5)"/>
+
+          <g class="wheel">
+            <circle cx="302" cy="270" r="60" fill="#15171b"/>
+            <circle cx="302" cy="270" r="39" fill="#b9c0ca"/>
+            <circle cx="302" cy="270" r="35" fill="#e3e8ee"/>
+            <g stroke="#a8b1bd" stroke-width="5" stroke-linecap="round">
+              <path d="M302 240 L302 260"/><path d="M302 280 L302 300"/>
+              <path d="M272 270 L292 270"/><path d="M312 270 L332 270"/>
+              <path d="M281 249 L295 263"/><path d="M309 277 L323 291"/>
+              <path d="M323 249 L309 263"/><path d="M295 277 L281 291"/>
+            </g>
+            <circle cx="302" cy="270" r="9" fill="#272c33"/>
+          </g>
+          <g class="wheel">
+            <circle cx="778" cy="270" r="60" fill="#15171b"/>
+            <circle cx="778" cy="270" r="39" fill="#b9c0ca"/>
+            <circle cx="778" cy="270" r="35" fill="#e3e8ee"/>
+            <g stroke="#a8b1bd" stroke-width="5" stroke-linecap="round">
+              <path d="M778 240 L778 260"/><path d="M778 280 L778 300"/>
+              <path d="M748 270 L768 270"/><path d="M788 270 L808 270"/>
+              <path d="M757 249 L771 263"/><path d="M785 277 L799 291"/>
+              <path d="M799 249 L785 263"/><path d="M771 277 L757 291"/>
+            </g>
+            <circle cx="778" cy="270" r="9" fill="#272c33"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <p class="stage__hint" id="stageHint">
+      Tap any spot to see it — or <button class="linkbtn" id="tryLogoBtn">upload your logo</button>
+      and watch it land on the car.
+    </p>
+
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="section" id="how">
+  <div class="wrap">
+    <p class="eyebrow">How it works</p>
+    <h2 class="h2">From your logo to the asphalt, in four steps.</h2>
+    <div class="steps" id="stepsGrid"></div>
+  </div>
+</section>
+
+<!-- ============ MARKETS ============ -->
+<section class="section" id="markets">
+  <div class="wrap">
+    <p class="eyebrow">The markets</p>
+    <h2 class="h2" id="marketsTitle">One 911 per city.</h2>
+    <p class="lead" id="marketsLead">
+      Every market has its own car, its own goal and its own pricing. One brand can take
+      the same zone in several cities — that's where the regional package comes in.
+    </p>
+    <div class="markets" id="marketsGrid"></div>
+  </div>
+</section>
+
+<!-- ============ WHERE THE MONEY GOES ============ -->
+<section class="section section--alt" id="funding">
+  <div class="wrap">
+    <p class="eyebrow">The maths</p>
+    <h2 class="h2" id="fundTitle">—</h2>
+    <p class="lead" id="fundLead"></p>
+
+    <div class="fund">
+      <div class="fund__board">
+        <div class="fund__row"><span id="fundAssetLabel">Asset</span><b id="fundAsset">$0</b></div>
+        <div class="fund__row"><span>Raised so far</span><b class="is-green" id="fundRaised">$0</b></div>
+        <div class="fund__row fund__row--total"><span>Still to go</span><b id="fundGap">$0</b></div>
+        <div class="fund__row fund__rent" id="fundRent" hidden><span>Then it rents for</span><b id="fundRentVal">—</b></div>
+        <div class="fund__row fund__rent" id="fundRent2" hidden><span>Gross rental payback <em>(before operating costs)</em></span><b id="fundPayback">—</b></div>
+        <div class="bar"><div class="bar__fill" id="fundBar"></div></div>
+        <p class="fund__note" id="fundNote"></p>
+      </div>
+      <dl class="fund__rows" id="fundRows"></dl>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY IT WORKS ============ -->
+<section class="section" id="why">
+  <div class="wrap">
+    <p class="eyebrow">The model</p>
+    <h2 class="h2" id="engineTitle">—</h2>
+    <p class="lead" id="engineLead"></p>
+    <div class="engine" id="engineGrid"></div>
+  </div>
+</section>
+
+<!-- ============ SPOTS ============ -->
+<section class="section section--alt" id="spots">
+  <div class="wrap">
+    <p class="eyebrow">Brand spots</p>
+    <h2 class="h2">Eight zones in <span id="spotsCity">—</span>. <span class="muted" id="openCount"></span></h2>
+    <p class="lead">One brand per industry, per car. Whoever takes it locks their competition out.</p>
+    <div class="spots" id="spotsGrid"></div>
+  </div>
+</section>
+
+<!-- ============ THE CAR ============ -->
+<section class="section" id="car">
+  <div class="wrap car2">
+    <div>
+      <p class="eyebrow" id="carEyebrow">The car</p>
+      <h2 class="h2" id="carTitle">Porsche 911</h2>
+      <p class="lead" id="carTrim"></p>
+      <p class="lead" id="carBlurb">
+        It isn't a show car parked in a hall. It gets driven, shown and photographed.
+        Your brand doesn't sit in storage — it moves.
+      </p>
+      <p class="lead">This is the <b id="carCityName">—</b> car. Every city has its own, with its own spec and colour.</p>
+      <dl class="specs" id="specsList"></dl>
+    </div>
+    <div class="car2__art" id="carMini"></div>
+  </div>
+</section>
+
+<!-- ============ AUCTION ============ -->
+<section class="section section--dark" id="auction">
+  <div class="wrap auction">
+    <div>
+      <p class="eyebrow eyebrow--light">The auction</p>
+      <h2 class="h2 h2--light">Closes in <span id="countdown2">—</span></h2>
+      <p class="lead lead--light">
+        Every spot has an opening price. Match it or beat it. If someone outbids you,
+        we email you and you can come back in.
+      </p>
+      <a class="btn btn--light" href="#spots">See open spots</a>
+    </div>
+    <div class="auction__stats">
+      <div class="stat"><span class="stat__k" id="statRaised">$0</span><span class="stat__l">raised</span></div>
+      <div class="stat"><span class="stat__k" id="statSold">0/0</span><span class="stat__l">spots taken</span></div>
+      <div class="stat"><span class="stat__k" id="statPct">0%</span><span class="stat__l">of goal</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section" id="faq">
+  <div class="wrap wrap--narrow">
+    <p class="eyebrow">Questions</p>
+    <h2 class="h2">What everyone asks.</h2>
+    <div class="faq" id="faqList"></div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta">
+  <div class="wrap">
+    <h2 class="cta__title">Shall we put your logo on it?</h2>
+    <p class="cta__sub"><b id="openCount2">—</b> spots still open.</p>
+    <a class="btn btn--dark btn--lg" href="#spots">Choose my spot</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__inner">
+    <span id="footBrand">Brand My 911</span>
+    <a class="foot__sister" id="sisterLinkF" href="index.html">The Fleet ↗</a>
+    <span class="foot__by">A project by <b id="footOwner"></b></span>
+    <a id="footIg" class="foot__ig" href="#" hidden>Instagram</a>
+  </div>
+</footer>
+
+<!-- ============ MODAL ============ -->
+<div class="modal" id="modal" hidden>
+  <div class="modal__backdrop" data-close></div>
+  <div class="modal__card" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+    <button class="modal__x" data-close aria-label="Close">
+      <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <p class="modal__eyebrow" id="mEyebrow">Open spot</p>
+    <h3 class="modal__title" id="mTitle">—</h3>
+    <p class="modal__price"><b id="mPrice">—</b> <span>opening price</span></p>
+
+    <form id="mForm" class="form">
+      <!-- LOGO UPLOAD: previews live on the vehicle -->
+      <div class="drop" id="drop">
+        <input type="file" id="logoInput" accept="image/png,image/jpeg,image/svg+xml,image/webp" hidden>
+        <div class="drop__preview" id="dropPreview" hidden><img id="dropImg" alt="Your logo"></div>
+        <div class="drop__empty" id="dropEmpty">
+          <svg viewBox="0 0 24 24" class="drop__ico"><path d="M12 16V4m0 0L7.5 8.5M12 4l4.5 4.5M4 16v2.5A1.5 1.5 0 0 0 5.5 20h13a1.5 1.5 0 0 0 1.5-1.5V16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <b>Upload your logo</b>
+          <span>PNG, SVG or JPG — see it on the car instantly</span>
+        </div>
+        <button type="button" class="drop__clear" id="dropClear" hidden>Remove</button>
+      </div>
+
+      <label>Your brand<input name="brand" required placeholder="Company name"></label>
+      <label>Industry <span class="form__hint">— one brand per industry, per car</span>
+        <input name="industry" required placeholder="Banking, telco, beer, retail…"></label>
+      <label>Your name<input name="name" required placeholder="Who's writing"></label>
+      <label>Email<input name="email" type="email" required placeholder="you@company.com"></label>
+      <label>Your bid (USD)<input name="bid" id="mBid" type="number" min="0" step="100" required></label>
+      <button class="btn btn--dark btn--full" type="submit">Send my bid</button>
+      <p class="form__note">Opens your email client with everything filled in. Nothing is charged now.</p>
+    </form>
+
+    <div id="mSold" class="sold" hidden>
+      <p>This spot is taken by <b id="mSoldBrand"></b>.</p>
+      <p class="sold__note">Join the waiting list and we'll tell you the moment it frees up.</p>
+      <a class="btn btn--dark btn--full" id="mWait" href="#">Join the waiting list</a>
+    </div>
+  </div>
+</div>
+
+<script src="config.car.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

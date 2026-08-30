@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brand My Machine — Your brand, on the job site.</title>
+<meta name="description" content="Your logo works on machines that work. Sponsors buy the machine, the machine earns, the rent buys the next one.">
+<meta property="og:title" content="Your brand, on the job site.">
+<meta property="og:description" content="Five machines working across Panama. Your logo works with them.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚜</text></svg>">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="wrap nav__inner">
+    <a class="nav__brand" href="#top">
+      <svg class="nav__mark" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M2 15.5h20M4.5 15.5c0-1.2.9-2.2 2-2.2s2 1 2 2.2M15.5 15.5c0-1.2.9-2.2 2-2.2s2 1 2 2.2"
+              fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        <path d="M3 13.2c.4-1.6 1-2.6 1.9-3.1C6.4 9.2 8.7 8.8 12 8.8s5.6.4 7.1 1.3c.9.5 1.5 1.5 1.9 3.1"
+              fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+      </svg>
+      <span id="navBrandName">Brand My Machine</span>
+    </a>
+
+    <nav class="nav__links">
+      <a href="#how">How it works</a>
+      <a href="#markets">Machines</a>
+      <a href="#funding">The maths</a>
+      <a href="#why">Why it works</a>
+      <a href="#car">The machine</a>
+      <a href="#spots">Surfaces</a>
+      <a href="#faq">FAQ</a>
+      <a class="nav__sister" id="sisterLink" href="index.html">Brand My 911 ↗</a>
+    </nav>
+
+    <div class="nav__actions">
+      <button class="iconbtn" id="themeBtn" aria-label="Toggle theme" title="Toggle theme">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.4 5.4l1.6 1.6M17 17l1.6 1.6M18.6 5.4L17 7M7 17l-1.6 1.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+      </button>
+      <a class="btn btn--dark" href="#spots">Get a spot</a>
+    </div>
+
+    <button class="iconbtn nav__burger" id="burgerBtn" aria-label="Menu">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <div class="nav__mobile" id="navMobile">
+    <a href="#how">How it works</a>
+    <a href="#markets">Machines</a>
+    <a href="#funding">The maths</a>
+    <a href="#why">Why it works</a>
+    <a href="#car">The machine</a>
+    <a href="#spots">Surfaces</a>
+    <a href="#faq">FAQ</a>
+    <a id="sisterLinkM" href="index.html">Brand My 911 ↗</a>
+    <a class="btn btn--dark" href="#spots">Get a spot</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap">
+
+    <div class="live">
+      <span class="live__dot"></span>
+      <span class="live__label">LIVE</span>
+      <span class="live__sep">·</span>
+      <b id="watchers">—</b>&nbsp;watching now
+      <span class="live__sep">·</span>
+      <b id="visitors">—</b>&nbsp;total visitors
+    </div>
+
+    <h1 class="hero__title" id="heroTitle">Your brand, on the job site.</h1>
+    <p class="hero__sub" id="heroSub">Five machines working across Panama.</p>
+
+    <div class="cities" id="cityTabs" role="tablist" aria-label="Choose a city"></div>
+    <p class="cities__car"><b id="carLine">—</b></p>
+
+    <div class="raised">
+      <div class="raised__row">
+        <span class="raised__amount" id="raisedAmount">$0</span>
+        <span class="raised__word">raised</span>
+        <span class="raised__goal">of <b id="goalAmount">$0</b> goal · <b id="pct">0%</b></span>
+      </div>
+      <div class="bar"><div class="bar__fill" id="barFill"></div></div>
+      <p class="raised__note">
+        Auction ends in <b id="countdown">—</b> · You can outbid any open surface
+      </p>
+    </div>
+
+    <!-- ===== VEHICLE + HOTSPOTS ===== -->
+    <div class="stage" id="stage">
+      <div class="stage__car" id="carHost">
+        <svg class="car" viewBox="0 0 1000 380" id="carSvg" data-art="skid" role="img" aria-label="Skid steer loader">
+          <defs>
+            <linearGradient id="gBody" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="var(--paint-hi)"/><stop offset=".55" stop-color="var(--paint)"/><stop offset="1" stop-color="var(--paint-lo)"/>
+            </linearGradient>
+            <linearGradient id="gGlass" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#66717e"/><stop offset="1" stop-color="#242c35"/>
+            </linearGradient>
+            <radialGradient id="gShadow" cx=".5" cy=".5" r=".5">
+              <stop offset="0" stop-color="rgba(0,0,0,.4)"/><stop offset=".7" stop-color="rgba(0,0,0,.12)"/><stop offset="1" stop-color="rgba(0,0,0,0)"/>
+            </radialGradient>
+          </defs>
+          <ellipse cx="540" cy="334" rx="330" ry="18" fill="url(#gShadow)"/>
+          <!-- chasis -->
+          <path d="M 298,214 L 664,214 C 682,214 692,224 692,240 L 692,288 C 692,298 684,302 668,302 L 310,302 C 298,302 292,294 292,282 L 292,226 C 292,218 294,214 298,214 Z" fill="url(#gBody)"/>
+          <!-- cabina -->
+          <path d="M 392,196 L 392,126 C 392,116 400,110 412,110 L 590,110 C 604,110 612,118 612,130 L 612,196 Z" fill="url(#gBody)"/>
+          <path d="M 408,190 L 408,132 C 408,126 412,124 418,124 L 584,124 C 592,124 596,128 596,136 L 596,190 Z" fill="url(#gGlass)"/>
+          <path d="M 470,124 L 470,190" stroke="var(--paint-lo)" stroke-width="7"/>
+          <!-- rejilla motor trasera -->
+          <g stroke="rgba(0,0,0,.4)" stroke-width="4" stroke-linecap="round">
+            <path d="M 308,228 L 350,228"/><path d="M 308,244 L 350,244"/><path d="M 308,260 L 350,260"/><path d="M 308,276 L 350,276"/>
+          </g>
+          <!-- brazo de carga: pivote atrás, corre por el costado hasta el cucharón -->
+          <path d="M 322,232 C 360,196 430,178 520,180 C 622,182 706,204 754,238"
+                fill="none" stroke="var(--paint-lo)" stroke-width="24" stroke-linecap="round"/>
+          <path d="M 322,232 C 360,196 430,178 520,180 C 622,182 706,204 754,238"
+                fill="none" stroke="var(--paint)" stroke-width="11" stroke-linecap="round"/>
+          <circle cx="322" cy="232" r="14" fill="#3a4149"/><circle cx="322" cy="232" r="6" fill="#8b939c"/>
+          <!-- cilindro de elevación -->
+          <path d="M 372,276 L 486,214" stroke="#8b939c" stroke-width="13" stroke-linecap="round"/>
+          <circle cx="486" cy="214" r="8" fill="#3a4149"/>
+          <!-- cucharón: placa trasera, panza curva y filo -->
+          <path d="M 748,214 L 792,214 L 792,258 C 838,266 866,292 872,318
+                   L 764,318 C 748,292 744,248 748,214 Z" fill="url(#gBody)"/>
+          <path d="M 764,318 L 872,318 L 874,330 L 766,330 Z" fill="#3a4149"/>
+          <path d="M 792,258 C 838,266 866,292 872,318" fill="none" stroke="rgba(0,0,0,.25)" stroke-width="3"/>
+          <!-- ruedas -->
+          <g>
+            <circle cx="352" cy="268" r="58" fill="#16181c"/><circle cx="352" cy="268" r="30" fill="#c9ced6"/><circle cx="352" cy="268" r="10" fill="#3a4149"/>
+            <circle cx="612" cy="268" r="58" fill="#16181c"/><circle cx="612" cy="268" r="30" fill="#c9ced6"/><circle cx="612" cy="268" r="10" fill="#3a4149"/>
+          </g>
+        </svg>
+
+        <svg class="car" viewBox="0 0 1000 380" data-art="mini" role="img" aria-label="Mini excavator" hidden>
+          <ellipse cx="500" cy="336" rx="330" ry="16" fill="url(#gShadow)"/>
+          <!-- orugas -->
+          <rect x="248" y="278" width="396" height="54" rx="27" fill="#20242a"/>
+          <rect x="266" y="290" width="360" height="30" rx="15" fill="#39404a"/>
+          <g fill="#20242a"><circle cx="286" cy="305" r="15"/><circle cx="606" cy="305" r="15"/></g>
+          <!-- contrapeso -->
+          <path d="M 250,208 C 240,214 238,262 250,282 L 300,282 L 300,204 Z" fill="var(--paint-lo)"/>
+          <!-- casa / superestructura -->
+          <path d="M 288,200 L 574,200 C 586,200 592,208 592,220 L 592,268 C 592,278 584,282 572,282 L 288,282 Z" fill="url(#gBody)"/>
+          <!-- cabina -->
+          <path d="M 396,204 L 396,132 C 396,122 404,116 416,116 L 552,116 C 566,116 574,124 574,138 L 574,204 Z" fill="url(#gBody)"/>
+          <path d="M 412,196 L 412,140 C 412,132 416,130 424,130 L 548,130 C 556,130 560,134 560,142 L 560,196 Z" fill="url(#gGlass)"/>
+          <!-- pluma -->
+          <path d="M 578,236 C 620,190 668,156 712,142" fill="none" stroke="var(--paint-lo)" stroke-width="30" stroke-linecap="round"/>
+          <path d="M 578,236 C 620,190 668,156 712,142" fill="none" stroke="var(--paint)" stroke-width="15" stroke-linecap="round"/>
+          <!-- balancín -->
+          <path d="M 712,142 L 782,250" fill="none" stroke="var(--paint-lo)" stroke-width="24" stroke-linecap="round"/>
+          <path d="M 712,142 L 782,250" fill="none" stroke="var(--paint)" stroke-width="11" stroke-linecap="round"/>
+          <!-- cilindros -->
+          <path d="M 606,206 L 676,178" stroke="#8b939c" stroke-width="11" stroke-linecap="round"/>
+          <path d="M 704,168 L 756,214" stroke="#8b939c" stroke-width="10" stroke-linecap="round"/>
+          <circle cx="712" cy="142" r="12" fill="#3a4149"/>
+          <!-- cucharón -->
+          <path d="M 774,242 C 812,244 842,264 850,292 L 838,314 L 792,306 C 776,290 770,264 774,242 Z" fill="url(#gBody)"/>
+          <g fill="#3a4149"><path d="M 836,310 l 14,10 -10,6 z"/><path d="M 812,304 l 12,12 -12,4 z"/><path d="M 790,298 l 10,12 -12,2 z"/></g>
+        </svg>
+
+        <svg class="car" viewBox="0 0 1000 380" data-art="backhoe" role="img" aria-label="Backhoe loader" hidden>
+          <ellipse cx="530" cy="336" rx="370" ry="16" fill="url(#gShadow)"/>
+          <!-- brazo trasero plegado -->
+          <path d="M 356,210 C 300,168 254,142 226,150" fill="none" stroke="var(--paint-lo)" stroke-width="28" stroke-linecap="round"/>
+          <path d="M 356,210 C 300,168 254,142 226,150" fill="none" stroke="var(--paint)" stroke-width="14" stroke-linecap="round"/>
+          <path d="M 226,150 C 208,178 202,214 208,246" fill="none" stroke="var(--paint-lo)" stroke-width="22" stroke-linecap="round"/>
+          <path d="M 196,238 C 216,238 232,250 236,266 L 226,286 L 196,278 C 188,266 190,248 196,238 Z" fill="var(--paint-lo)"/>
+          <!-- chasis -->
+          <path d="M 336,212 L 792,212 C 806,212 812,220 812,232 L 812,282 C 812,294 804,300 790,300 L 344,300 C 332,300 326,292 326,280 L 326,224 C 326,216 330,212 336,212 Z" fill="url(#gBody)"/>
+          <!-- capó motor -->
+          <path d="M 640,212 L 786,212 C 800,212 806,220 806,232 L 806,258 L 640,258 Z" fill="var(--paint-lo)"/>
+          <g stroke="rgba(0,0,0,.35)" stroke-width="4" stroke-linecap="round">
+            <path d="M 762,226 L 796,226"/><path d="M 762,238 L 796,238"/><path d="M 762,250 L 796,250"/>
+          </g>
+          <!-- cabina -->
+          <path d="M 430,206 L 430,116 C 430,106 438,100 450,100 L 606,100 C 620,100 628,108 628,122 L 628,206 Z" fill="url(#gBody)"/>
+          <path d="M 446,198 L 446,124 C 446,118 450,116 456,116 L 600,116 C 610,116 614,120 614,128 L 614,198 Z" fill="url(#gGlass)"/>
+          <path d="M 524,116 L 524,198" stroke="var(--paint-lo)" stroke-width="7"/>
+          <!-- brazo cargador frontal -->
+          <path d="M 604,244 C 686,244 780,250 856,266" fill="none" stroke="var(--paint-lo)" stroke-width="24" stroke-linecap="round"/>
+          <path d="M 604,244 C 686,244 780,250 856,266" fill="none" stroke="var(--paint)" stroke-width="11" stroke-linecap="round"/>
+          <circle cx="604" cy="244" r="12" fill="#3a4149"/>
+          <!-- cucharón frontal -->
+          <path d="M 842,250 L 900,250 C 926,262 936,286 930,308 L 922,322 L 846,318 C 836,300 834,268 842,250 Z" fill="url(#gBody)"/>
+          <path d="M 846,318 L 922,322 L 921,332 L 848,328 Z" fill="#3a4149"/>
+          <!-- ruedas: trasera grande, delantera chica -->
+          <circle cx="376" cy="254" r="76" fill="#16181c"/><circle cx="376" cy="254" r="40" fill="#c9ced6"/><circle cx="376" cy="254" r="12" fill="#3a4149"/>
+          <circle cx="746" cy="280" r="50" fill="#16181c"/><circle cx="746" cy="280" r="26" fill="#c9ced6"/><circle cx="746" cy="280" r="9" fill="#3a4149"/>
+        </svg>
+
+        <svg class="car" viewBox="0 0 1000 380" data-art="exca" role="img" aria-label="20 tonne excavator" hidden>
+          <ellipse cx="470" cy="338" rx="360" ry="16" fill="url(#gShadow)"/>
+          <!-- orugas -->
+          <rect x="206" y="270" width="462" height="62" rx="31" fill="#20242a"/>
+          <rect x="226" y="284" width="422" height="34" rx="17" fill="#39404a"/>
+          <g fill="#20242a"><circle cx="248" cy="301" r="18"/><circle cx="626" cy="301" r="18"/></g>
+          <g fill="#20242a"><circle cx="330" cy="316" r="10"/><circle cx="400" cy="316" r="10"/><circle cx="470" cy="316" r="10"/><circle cx="540" cy="316" r="10"/></g>
+          <!-- contrapeso -->
+          <path d="M 212,190 C 198,198 196,254 212,274 L 278,274 L 278,186 Z" fill="var(--paint-lo)"/>
+          <!-- casa -->
+          <path d="M 258,182 L 584,182 C 598,182 604,190 604,204 L 604,258 C 604,268 596,274 582,274 L 258,274 Z" fill="url(#gBody)"/>
+          <g stroke="rgba(0,0,0,.3)" stroke-width="4" stroke-linecap="round">
+            <path d="M 300,204 L 356,204"/><path d="M 300,218 L 356,218"/><path d="M 300,232 L 356,232"/>
+          </g>
+          <!-- cabina -->
+          <path d="M 380,186 L 380,110 C 380,100 388,94 400,94 L 560,94 C 574,94 582,102 582,116 L 582,186 Z" fill="url(#gBody)"/>
+          <path d="M 396,178 L 396,118 C 396,110 400,108 408,108 L 556,108 C 564,108 568,112 568,120 L 568,178 Z" fill="url(#gGlass)"/>
+          <!-- pluma -->
+          <path d="M 592,224 C 640,172 692,136 744,120" fill="none" stroke="var(--paint-lo)" stroke-width="36" stroke-linecap="round"/>
+          <path d="M 592,224 C 640,172 692,136 744,120" fill="none" stroke="var(--paint)" stroke-width="18" stroke-linecap="round"/>
+          <!-- balancín -->
+          <path d="M 744,120 L 836,248" fill="none" stroke="var(--paint-lo)" stroke-width="28" stroke-linecap="round"/>
+          <path d="M 744,120 L 836,248" fill="none" stroke="var(--paint)" stroke-width="13" stroke-linecap="round"/>
+          <!-- cilindros -->
+          <path d="M 624,190 L 706,152" stroke="#8b939c" stroke-width="13" stroke-linecap="round"/>
+          <path d="M 736,148 L 804,204" stroke="#8b939c" stroke-width="12" stroke-linecap="round"/>
+          <circle cx="744" cy="120" r="14" fill="#3a4149"/>
+          <!-- cucharón -->
+          <path d="M 826,238 C 872,242 906,266 916,300 L 900,326 L 846,314 C 828,296 822,264 826,238 Z" fill="url(#gBody)"/>
+          <g fill="#3a4149"><path d="M 898,322 l 16,12 -12,7 z"/><path d="M 870,316 l 14,14 -14,4 z"/><path d="M 844,308 l 12,14 -14,2 z"/></g>
+        </svg>
+      </div>
+    </div>
+
+    <p class="stage__hint" id="stageHint">
+      Tap any spot to see it — or <button class="linkbtn" id="tryLogoBtn">upload your logo</button>
+      and watch it land on the machine.
+    </p>
+
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="section" id="how">
+  <div class="wrap">
+    <p class="eyebrow">How it works</p>
+    <h2 class="h2">From your logo to the job site, in four steps.</h2>
+    <div class="steps" id="stepsGrid"></div>
+  </div>
+</section>
+
+<!-- ============ MARKETS ============ -->
+<section class="section" id="markets">
+  <div class="wrap">
+    <p class="eyebrow">The markets</p>
+    <h2 class="h2" id="marketsTitle">Five machines. Bobcat and Komatsu.</h2>
+    <p class="lead" id="marketsLead">
+      Each machine has its own price, its own surfaces and its own auction. Take the same
+      surface across the whole fleet and there's fleet pricing.
+    </p>
+    <div class="markets" id="marketsGrid"></div>
+  </div>
+</section>
+
+<!-- ============ WHERE THE MONEY GOES ============ -->
+<section class="section section--alt" id="funding">
+  <div class="wrap">
+    <p class="eyebrow">The maths</p>
+    <h2 class="h2" id="fundTitle">—</h2>
+    <p class="lead" id="fundLead"></p>
+
+    <div class="fund">
+      <div class="fund__board">
+        <div class="fund__row"><span id="fundAssetLabel">Asset</span><b id="fundAsset">$0</b></div>
+        <div class="fund__row"><span>Raised so far</span><b class="is-green" id="fundRaised">$0</b></div>
+        <div class="fund__row fund__row--total"><span>Still to go</span><b id="fundGap">$0</b></div>
+        <div class="fund__row fund__rent" id="fundRent" hidden><span>Then it rents for</span><b id="fundRentVal">—</b></div>
+        <div class="fund__row fund__rent" id="fundRent2" hidden><span>Gross rental payback <em>(before operating costs)</em></span><b id="fundPayback">—</b></div>
+        <div class="bar"><div class="bar__fill" id="fundBar"></div></div>
+        <p class="fund__note" id="fundNote"></p>
+      </div>
+      <dl class="fund__rows" id="fundRows"></dl>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY IT WORKS ============ -->
+<section class="section" id="why">
+  <div class="wrap">
+    <p class="eyebrow">The model</p>
+    <h2 class="h2" id="engineTitle">—</h2>
+    <p class="lead" id="engineLead"></p>
+    <div class="engine" id="engineGrid"></div>
+  </div>
+</section>
+
+<!-- ============ SPOTS ============ -->
+<section class="section section--alt" id="spots">
+  <div class="wrap">
+    <p class="eyebrow">Surfaces</p>
+    <h2 class="h2"><span id="spotsCity">—</span>. <span class="muted" id="openCount"></span></h2>
+    <p class="lead">One brand per industry, per machine. One cement company, one fuel brand, one insurer.</p>
+    <div class="spots" id="spotsGrid"></div>
+  </div>
+</section>
+
+<!-- ============ THE CAR ============ -->
+<section class="section" id="car">
+  <div class="wrap car2">
+    <div>
+      <p class="eyebrow" id="carEyebrow">The machine</p>
+      <h2 class="h2" id="carTitle">Machine</h2>
+      <p class="lead" id="carTrim"></p>
+      <p class="lead" id="carBlurb">
+        Roughly 2,000 operating hours a year, at eye level, beside stopped traffic.
+        A car passes in three seconds; a machine holds the same corner for weeks.
+      </p>
+      <p class="lead">This is the <b id="carCityName">—</b>. Each machine runs its own auction, at its own price.</p>
+      <dl class="specs" id="specsList"></dl>
+    </div>
+    <div class="car2__art" id="carMini"></div>
+  </div>
+</section>
+
+<!-- ============ AUCTION ============ -->
+<section class="section section--dark" id="auction">
+  <div class="wrap auction">
+    <div>
+      <p class="eyebrow eyebrow--light">The auction</p>
+      <h2 class="h2 h2--light">Closes in <span id="countdown2">—</span></h2>
+      <p class="lead lead--light">
+        Every surface has an opening price. Match it or beat it. If someone outbids you,
+        we email you and you can come back in.
+      </p>
+      <a class="btn btn--light" href="#spots">See open surfaces</a>
+    </div>
+    <div class="auction__stats">
+      <div class="stat"><span class="stat__k" id="statRaised">$0</span><span class="stat__l">raised</span></div>
+      <div class="stat"><span class="stat__k" id="statSold">0/0</span><span class="stat__l">surfaces taken</span></div>
+      <div class="stat"><span class="stat__k" id="statPct">0%</span><span class="stat__l">of goal</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section" id="faq">
+  <div class="wrap wrap--narrow">
+    <p class="eyebrow">Questions</p>
+    <h2 class="h2">What everyone asks.</h2>
+    <div class="faq" id="faqList"></div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta">
+  <div class="wrap">
+    <h2 class="cta__title">Shall we put your logo to work?</h2>
+    <p class="cta__sub"><b id="openCount2">—</b> surfaces still open.</p>
+    <a class="btn btn--dark btn--lg" href="#spots">Choose my surface</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__inner">
+    <span id="footBrand">Brand My Machine</span>
+    <a class="foot__sister" id="sisterLinkF" href="index.html">Brand My 911 ↗</a>
+    <span class="foot__by">A project by <b id="footOwner"></b></span>
+    <a id="footIg" class="foot__ig" href="#" hidden>Instagram</a>
+  </div>
+</footer>
+
+<!-- ============ MODAL ============ -->
+<div class="modal" id="modal" hidden>
+  <div class="modal__backdrop" data-close></div>
+  <div class="modal__card" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+    <button class="modal__x" data-close aria-label="Close">
+      <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <p class="modal__eyebrow" id="mEyebrow">Open surface</p>
+    <h3 class="modal__title" id="mTitle">—</h3>
+    <p class="modal__price"><b id="mPrice">—</b> <span>opening price</span></p>
+
+    <form id="mForm" class="form">
+      <!-- LOGO UPLOAD: previews live on the vehicle -->
+      <div class="drop" id="drop">
+        <input type="file" id="logoInput" accept="image/png,image/jpeg,image/svg+xml,image/webp" hidden>
+        <div class="drop__preview" id="dropPreview" hidden><img id="dropImg" alt="Your logo"></div>
+        <div class="drop__empty" id="dropEmpty">
+          <svg viewBox="0 0 24 24" class="drop__ico"><path d="M12 16V4m0 0L7.5 8.5M12 4l4.5 4.5M4 16v2.5A1.5 1.5 0 0 0 5.5 20h13a1.5 1.5 0 0 0 1.5-1.5V16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <b>Upload your logo</b>
+          <span>PNG, SVG or JPG — see it on the machine instantly</span>
+        </div>
+        <button type="button" class="drop__clear" id="dropClear" hidden>Remove</button>
+      </div>
+
+      <label>Your brand<input name="brand" required placeholder="Company name"></label>
+      <label>Industry <span class="form__hint">— one brand per industry, per machine</span>
+        <input name="industry" required placeholder="Banking, telco, beer, retail…"></label>
+      <label>Your name<input name="name" required placeholder="Who's writing"></label>
+      <label>Email<input name="email" type="email" required placeholder="you@company.com"></label>
+      <label>Your bid (USD)<input name="bid" id="mBid" type="number" min="0" step="100" required></label>
+      <button class="btn btn--dark btn--full" type="submit">Send my bid</button>
+      <p class="form__note">Opens your email client with everything filled in. Nothing is charged now.</p>
+    </form>
+
+    <div id="mSold" class="sold" hidden>
+      <p>This surface is taken by <b id="mSoldBrand"></b>.</p>
+      <p class="sold__note">Join the waiting list and we'll tell you the moment it frees up.</p>
+      <a class="btn btn--dark btn--full" id="mWait" href="#">Join the waiting list</a>
+    </div>
+  </div>
+</div>
+
+<script src="config.machines.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
