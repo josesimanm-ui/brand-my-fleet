@@ -57,7 +57,6 @@ window.SITE = {
       id: "sv", city: "San Salvador", country: "El Salvador", flag: "🇸🇻", status: "live",
       vehicle: { model: "Porsche 911", trim: "Carrera T (992.2)", year: "2026", paint: "#009FC7" },
       goal: 225000, endsAt: "2026-09-30T23:59:00-06:00",
-      baseWatchers: 96, baseVisitors: 18420,
       spots: [
         { id: "roof",     price:  34000, status: "open" },
         { id: "door",     price:  40000, status: "open" },
@@ -73,7 +72,6 @@ window.SITE = {
       id: "pa", city: "Panama City", country: "Panama", flag: "🇵🇦", status: "live",
       vehicle: { model: "Porsche 911", trim: "Carrera GTS T-Hybrid (992.2)", year: "2026", paint: "#C8102E" },
       goal: 229000, endsAt: "2026-10-31T23:59:00-05:00",
-      baseWatchers: 148, baseVisitors: 31284,
       spots: [
         { id: "roof",     price:  34000, status: "open" },
         { id: "door",     price:  41000, status: "open" },
@@ -89,7 +87,6 @@ window.SITE = {
       id: "bog", city: "Bogotá", country: "Colombia", flag: "🇨🇴", status: "live",
       vehicle: { model: "Porsche 911", trim: "Carrera 4 GTS (992.2)", year: "2026", paint: "#1D3F8F" },
       goal: 319000, endsAt: "2026-11-15T23:59:00-05:00",
-      baseWatchers: 173, baseVisitors: 27650,
       spots: [
         { id: "door",     price:  57000, status: "open" },
         { id: "roof",     price:  48000, status: "open" },
@@ -105,7 +102,6 @@ window.SITE = {
       id: "gt", city: "Guatemala City", country: "Guatemala", flag: "🇬🇹", status: "soon",
       vehicle: { model: "Porsche 911", trim: "Carrera S (992.2)", year: "2026", paint: "#E8E8E8" },
       goal: 230000, endsAt: "2026-11-30T23:59:00-06:00",
-      baseWatchers: 41, baseVisitors: 6120,
       spots: [
         { id: "roof",     price:  35000, status: "open" },
         { id: "door",     price:  41000, status: "open" },
@@ -121,7 +117,6 @@ window.SITE = {
       id: "mia", city: "Miami", country: "United States", flag: "🇺🇸", status: "soon",
       vehicle: { model: "Porsche 911", trim: "Turbo S (992.2)", year: "2026", paint: "#1B1B1B" },
       goal: 292000, endsAt: "2027-01-31T23:59:00-05:00",
-      baseWatchers: 212, baseVisitors: 44900,
       spots: [
         { id: "roof",     price:  44000, status: "open" },
         { id: "door",     price:  52000, status: "open" },

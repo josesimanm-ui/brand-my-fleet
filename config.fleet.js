@@ -56,7 +56,6 @@ window.SITE = {
       art: null, photo: "assets/bobcat-s570.jpg",
       vehicle: { model: "Bobcat", trim: "S570 skid steer", year: "2026", paint: "#F26B21" },
       goal: 65000, endsAt: "2026-10-15T23:59:00-05:00",
-      baseWatchers: 74, baseVisitors: 9840,
       rental: { monthly: 2800, utilization: 0.60 },
       zones: [
         { id: "rear",    name: "Rear Panel",   x: 82, y: 48 },
@@ -81,7 +80,6 @@ window.SITE = {
       art: null, photo: "assets/bobcat-e35.webp",
       vehicle: { model: "Bobcat", trim: "E35 · 3.5 t", year: "2026", paint: "#F26B21" },
       goal: 85000, endsAt: "2026-10-31T23:59:00-05:00",
-      baseWatchers: 61, baseVisitors: 7420,
       rental: { monthly: 2600, utilization: 0.60 },
       zones: [
         { id: "cwt",     name: "Counterweight", x: 70, y: 58 },
@@ -106,13 +104,12 @@ window.SITE = {
       art: null, photo: "assets/komatsu-pc200.webp",
       vehicle: { model: "Komatsu", trim: "PC200 · 20 t", year: "2026", paint: "#F5B400" },
       goal: 290000, endsAt: "2026-12-15T23:59:00-05:00",
-      baseWatchers: 152, baseVisitors: 11240,
       rental: { monthly: 9500, utilization: 0.65 },
       zones: [
         { id: "boom",    name: "Boom",          x: 33, y: 41 },
         { id: "cabroof", name: "Cab Roof",      x: 30, y: 53 },
-        { id: "house",   name: "House Side",    x: 15, y: 64 },
-        { id: "cwt",     name: "Counterweight", x: 10, y: 68 },
+        { id: "house",   name: "House Side",    x: 19, y: 60 },
+        { id: "cwt",     name: "Counterweight", x:  8, y: 72 },
         { id: "bucket",  name: "Bucket",        x: 74, y: 44 },
         { id: "track",   name: "Track Frame",   x: 17, y: 80 },
       ],
@@ -131,7 +128,6 @@ window.SITE = {
       art: null, photo: "assets/hondajet.jpg",
       vehicle: { model: "HondaJet", trim: "HA-420 Elite (pre-owned)", year: "2026", paint: "#C8102E" },
       goal: 950000, endsAt: "2027-01-31T23:59:00-05:00",
-      baseWatchers: 264, baseVisitors: 52140,
       zones: [
         { id: "tail",     name: "Tail Fin",         x: 70, y: 33 },
         { id: "nacelle",  name: "Engine Nacelle",   x: 62, y: 47 },
@@ -159,7 +155,6 @@ window.SITE = {
       art: null, photo: "assets/porsche-911.jpg",
       vehicle: { model: "Porsche 911", trim: "992 Carrera GTS", year: "2026", paint: "#009FC7" },
       goal: 229000, endsAt: "2026-11-30T23:59:00-05:00",
-      baseWatchers: 173, baseVisitors: 31284,
       zones: [
         { id: "roof",     name: "Roof Line",      x: 42, y: 17 },
         { id: "fquarter", name: "Front Quarter",  x: 72, y: 42 },

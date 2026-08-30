@@ -48,7 +48,6 @@ window.SITE = {
       art: "skid", photo: "assets/bobcat-skidsteer.jpg",
       vehicle: { model: "Bobcat", trim: "S76 · 74 hp", year: "2026", paint: "#F26B21" },
       goal: 92000, endsAt: "2026-10-15T23:59:00-05:00",
-      baseWatchers: 74, baseVisitors: 9840,
       rental: { monthly: 3000, utilization: 0.60 },
       zones: [
         { id: "cabroof", name: "Cab Roof",          x: 38, y: 11 },
@@ -72,7 +71,6 @@ window.SITE = {
       art: "mini", photo: null,
       vehicle: { model: "Komatsu", trim: "PC30MR-5 · 3 t", year: "2026", paint: "#F5B400" },
       goal: 78000, endsAt: "2026-10-31T23:59:00-05:00",
-      baseWatchers: 61, baseVisitors: 7420,
       rental: { monthly: 2600, utilization: 0.60 },
       zones: [
         { id: "boom",    name: "Boom",          x: 68, y: 30 },
@@ -96,7 +94,6 @@ window.SITE = {
       art: "backhoe", photo: null,
       vehicle: { model: "Komatsu", trim: "WB93R-8 · 4x4", year: "2026", paint: "#F5B400" },
       goal: 145000, endsAt: "2026-11-30T23:59:00-05:00",
-      baseWatchers: 118, baseVisitors: 15630,
       rental: { monthly: 3400, utilization: 0.62 },
       zones: [
         { id: "loader",  name: "Loader Arm",   x: 78, y: 44 },
@@ -121,7 +118,6 @@ window.SITE = {
       art: null, photo: "assets/komatsu-pc138.jpg",
       vehicle: { model: "Komatsu", trim: "PC138US-11 · 13 t short-tail", year: "2026", paint: "#F5B400" },
       goal: 205000, endsAt: "2026-12-15T23:59:00-05:00",
-      baseWatchers: 96, baseVisitors: 12480,
       rental: { monthly: 6200, utilization: 0.62 },
       zones: [
         { id: "cwt",     name: "Counterweight", x: 33, y: 60 },
@@ -146,7 +142,6 @@ window.SITE = {
       art: null, photo: "assets/komatsu-pc210.jpg",
       vehicle: { model: "Komatsu", trim: "PC210LC-11 · 20 t", year: "2026", paint: "#F5B400" },
       goal: 290000, endsAt: "2027-02-28T23:59:00-05:00",
-      baseWatchers: 152, baseVisitors: 11240,
       rental: { monthly: 9500, utilization: 0.65 },
       zones: [
         { id: "boom",    name: "Boom",          x: 30, y: 27 },

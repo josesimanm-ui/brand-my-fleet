@@ -43,7 +43,7 @@
 
   /* ---------- state ---------- */
   let market = S.markets.find(m => m.status === 'live') || S.markets[0];
-  let clockTimer = null, liveTimer = null;
+  let clockTimer = null;
 
   /* ---------- static copy ---------- */
   $('#navBrandName').textContent = S.site.name;
@@ -239,7 +239,7 @@
     renderSpotCards(m);
     renderMini();
     startClock(m);
-    startLive(m);
+    renderStatus(m, t);
   }
 
   /* OJO: en SVG, el.hidden = true NO escribe el atributo (hidden sólo existe
@@ -278,8 +278,9 @@
         '<div class="hot__card' + (sp.status === 'sold' || mine ? '' : ' hot__open') + '">' +
           badge(m, sp, 'hot__logo') +
           '<div><div class="hot__name">' + esc(labelFor(m, sp)) + '</div>' +
-          '<div class="hot__pos">' + esc(z.name) +
-            (sp.status === 'sold' ? '' : ' · <b>' + money(sp.price) + '</b>') + '</div></div>' +
+          '<div class="hot__pos"><span class="hot__zone">' + esc(z.name) + '</span>' +
+            (sp.status === 'sold' ? '' : '<span class="hot__sep"> · </span><b>' + money(sp.price) + '</b>') +
+          '</div></div>' +
         '</div>';
       el.addEventListener('click', () => openModal(sp, z));
       host.appendChild(el);
@@ -334,6 +335,19 @@
     })(t0);
   }
 
+  /* ---------- estado real: todo se calcula del config, nada inventado ---------- */
+  function renderStatus(m, t) {
+    const o = $('#openNow'), tot = $('#totalNow'), cs = $('#closeShort');
+    if (o)   o.textContent = t.open.length;
+    if (tot) tot.textContent = m.spots.length;
+    if (cs) {
+      const d = new Date(m.endsAt).getTime() - Date.now();
+      cs.textContent = m.status !== 'live' ? 'not open yet'
+        : d <= 0 ? 'closed'
+        : 'in ' + Math.ceil(d / 864e5) + ' days';
+    }
+  }
+
   function startClock(m) {
     clearInterval(clockTimer);
     const end = new Date(m.endsAt).getTime();
@@ -352,20 +366,6 @@
       $('#countdown2').textContent = txt;
     };
     tick(); clockTimer = setInterval(tick, 1000);
-  }
-
-  function startLive(m) {
-    clearInterval(liveTimer);
-    let drift = 0;
-    const tick = () => {
-      drift = Math.max(-22, Math.min(22, drift + (Math.random() - 0.5) * 6));
-      const wave = Math.sin(Date.now() / 42000) * 12;
-      $('#watchers').textContent =
-        Math.max(7, Math.round(m.baseWatchers + wave + drift)).toLocaleString('en-US');
-      $('#visitors').textContent =
-        Math.round(m.baseVisitors + (Date.now() / 1000 % 100000) / 42).toLocaleString('en-US');
-    };
-    tick(); liveTimer = setInterval(tick, 4200);
   }
 
   /* ---------- modal + logo upload ---------- */

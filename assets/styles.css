@@ -368,9 +368,14 @@ a{color:inherit;text-decoration:none}
   .cities{gap:6px}
   .city{height:34px;padding:0 12px;font-size:12.5px}
   .stage{padding-bottom:20px}
-  /* en móvil las etiquetas estorban: solo puntos, se abre el modal al tocar */
-  .hot__card{display:none}
-  .hot__dot{width:19px;height:19px}
+  /* en móvil: se oculta el nombre pero el PRECIO se queda — la promesa
+     del sitio es que todo precio está a la vista, y el móvil es el device real */
+  .hot__card{padding:4px 8px;gap:5px;border-radius:9px}
+  .hot__logo{width:17px;height:17px;border-radius:5px;font-size:9px}
+  .hot__name{display:none}
+  .hot__pos{font-size:11px;font-weight:700;color:var(--ink)}
+  .hot__pos b{font-size:11px}
+  .hot__dot{width:17px;height:17px}
   .raised__goal{width:100%;margin:4px 0 0}
 }
 @media (prefers-reduced-motion:reduce){
@@ -417,3 +422,18 @@ a{color:inherit;text-decoration:none}
 .deposit__row span{font-size:12.5px;color:var(--ink-2)}
 .deposit__row b{font-size:16px;font-weight:800;letter-spacing:-.02em}
 .deposit__note{font-size:11.5px;line-height:1.55;color:var(--ink-2);margin:9px 0 0}
+@media (max-width:640px){
+  .hot__zone,.hot__sep{display:none}
+}
+
+/* ---------- sin desbordamiento horizontal en móvil ---------- */
+html,body{max-width:100%;overflow-x:hidden}
+.hero__title{overflow-wrap:break-word;hyphens:auto}
+@media (max-width:640px){
+  .wrap{padding:0 18px}
+  .hero__title{font-size:clamp(30px,8.6vw,44px);letter-spacing:-.03em}
+  .live{font-size:11.5px;gap:5px}
+  .glance td,.glance th{font-size:13px;padding-right:8px}
+  .fund__row span{font-size:12px}
+  .modal__card{padding:24px 20px}
+}

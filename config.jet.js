@@ -84,7 +84,6 @@ window.SITE = {
       id: "pty", city: "Panama City", country: "Hub · PTY", flag: "🇵🇦", status: "live",
       vehicle: { model: "HondaJet", trim: "HA-420 Elite (pre-owned)", year: "2026", paint: "#0B2C4D" },
       goal: 950000, endsAt: "2026-11-30T23:59:00-05:00",
-      baseWatchers: 264, baseVisitors: 52140,
       spots: [
         { id: "tail",     price: 238000, status: "open" },
         { id: "fwd",      price: 154000, status: "open" },
@@ -100,7 +99,6 @@ window.SITE = {
       id: "bog", city: "Bogotá", country: "Second aircraft · BOG", flag: "🇨🇴", status: "soon",
       vehicle: { model: "HondaJet", trim: "HA-420 Elite (pre-owned)", year: "2027", paint: "#3B4A5A" },
       goal: 900000, endsAt: "2027-03-31T23:59:00-05:00",
-      baseWatchers: 88, baseVisitors: 9310,
       spots: [
         { id: "tail",     price: 225000, status: "open" },
         { id: "fwd",      price: 147000, status: "open" },
