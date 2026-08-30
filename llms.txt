@@ -1,0 +1,39 @@
+# Brand My Fleet
+
+> Five assets, one auction. A Porsche 911, a HondaJet and three construction machines
+> (Bobcat S570, Bobcat E35, Komatsu PC200) carry 34 brandable surfaces between them.
+> Every surface has a public price, one brand per industry per asset, terms run 12 months.
+> Every funding goal equals the real market price of the asset — sell all surfaces and
+> the asset is bought outright. Total fleet: USD 1,619,000. Based in Panama. August 2026.
+
+Nobody has auctioned brand space across a skid steer, a private jet and a supercar at
+the same time with every price public. The contrast — a $6,000 wheel rim beside a
+$238,000 jet tail fin — is the story.
+
+## The five assets
+
+- [Bobcat S570 skid steer](https://josesimanm-ui.github.io/brand-my-fleet/s570.html): goal $65,000 · 6 surfaces from $6,000 (Wheel Rims) to $17,000 (Side Panel)
+- [Bobcat E35 mini excavator](https://josesimanm-ui.github.io/brand-my-fleet/e35.html): goal $85,000 · 6 surfaces from $7,000 (Track Frame) to $23,000 (House Side)
+- [Komatsu PC200 20-tonne excavator](https://josesimanm-ui.github.io/brand-my-fleet/pc200.html): goal $290,000 · 6 surfaces from $23,000 (Track Frame) to $78,000 (House Side)
+- [HondaJet HA-420 Elite](https://josesimanm-ui.github.io/brand-my-fleet/hondajet.html): goal $950,000 (20% down + 12-month reserve on a ~$3.5M airframe) · 8 surfaces from $59,000 (Entry Door) to $238,000 (Tail Fin)
+- [Porsche 911 992 Carrera GTS](https://josesimanm-ui.github.io/brand-my-fleet/911.html): goal $229,000 · 8 surfaces from $21,000 (Wheel Centers) to $41,000 (Door Panel)
+
+## How it works
+
+1. Pick an asset and a surface — every price is on the page, no quote needed.
+2. Upload your logo and preview it on the asset instantly.
+3. Vinyl/decal installation by certified shops (aviation-grade on the aircraft).
+4. 12 months of exposure with a monthly report. The machines also earn rental income,
+   which funds the next asset.
+
+## Rules
+
+- One brand per industry, per asset. First mover locks competitors out.
+- No half-funded purchases: if an auction doesn't close, deadlines extend or sponsors
+  are refunded in full.
+- No adult content, gambling or politics.
+
+## More
+
+- [The fleet (hub)](https://josesimanm-ui.github.io/brand-my-fleet/)
+- Contact: josesimanm@gmail.com
