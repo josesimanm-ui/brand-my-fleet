@@ -86,9 +86,9 @@ window.SITE = {
       goal: 950000, endsAt: "2026-11-30T23:59:00-05:00",
       baseWatchers: 264, baseVisitors: 52140,
       spots: [
-        { id: "tail",     price: 238000, status: "sold", brand: "ZENTRO", color: "#e11d48" },
-        { id: "fwd",      price: 154000, status: "sold", brand: "VOLTA",  color: "#2563eb" },
-        { id: "headrest", price:  71000, status: "sold", brand: "AURORA", color: "#1f2937" },
+        { id: "tail",     price: 238000, status: "open" },
+        { id: "fwd",      price: 154000, status: "open" },
+        { id: "headrest", price:  71000, status: "open" },
         { id: "mid",      price: 131000, status: "open" },
         { id: "aft",      price: 113000, status: "open" },
         { id: "nacelle",  price: 101000, status: "open" },

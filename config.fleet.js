@@ -67,7 +67,7 @@ window.SITE = {
         { id: "rims",    name: "Wheel Rims",   x: 60, y: 66 },
       ],
       spots: [
-        { id: "side",    price: 17000, status: "sold", brand: "ANTHROPIC", color: "#d97757" },
+        { id: "side",    price: 17000, status: "open" },
         { id: "arm",     price: 14000, status: "open" },
         { id: "cabroof", price: 11000, status: "open" },
         { id: "rear",    price: 10000, status: "open" },
@@ -92,7 +92,7 @@ window.SITE = {
         { id: "track",   name: "Track Frame",   x: 56, y: 73 },
       ],
       spots: [
-        { id: "house",   price: 23000, status: "sold", brand: "OPENAI", color: "#10a37f" },
+        { id: "house",   price: 23000, status: "open" },
         { id: "boom",    price: 18000, status: "open" },
         { id: "cabroof", price: 15000, status: "open" },
         { id: "bucket",  price: 13000, status: "open" },
@@ -117,7 +117,7 @@ window.SITE = {
         { id: "track",   name: "Track Frame",   x: 17, y: 80 },
       ],
       spots: [
-        { id: "house",   price: 78000, status: "sold", brand: "NVIDIA", color: "#76b900" },
+        { id: "house",   price: 78000, status: "open" },
         { id: "boom",    price: 62000, status: "open" },
         { id: "cabroof", price: 52000, status: "open" },
         { id: "cwt",     price: 42000, status: "open" },
@@ -143,7 +143,7 @@ window.SITE = {
         { id: "headrest", name: "Cabin Headrests",  x: 45, y: 46 },
       ],
       spots: [
-        { id: "tail",     price: 238000, status: "sold", brand: "COINBASE", color: "#0052ff" },
+        { id: "tail",     price: 238000, status: "open" },
         { id: "fwd",      price: 154000, status: "open" },
         { id: "mid",      price: 131000, status: "open" },
         { id: "aft",      price: 113000, status: "open" },
@@ -171,7 +171,7 @@ window.SITE = {
         { id: "wheel",    name: "Wheel Centers",  x: 45, y: 67 },
       ],
       spots: [
-        { id: "door",     price: 41000, status: "sold", brand: "VOLTA", color: "#2563eb" },
+        { id: "door",     price: 41000, status: "open" },
         { id: "roof",     price: 34000, status: "open" },
         { id: "ducktail", price: 32000, status: "open" },
         { id: "fquarter", price: 30000, status: "open" },

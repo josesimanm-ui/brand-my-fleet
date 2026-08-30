@@ -59,7 +59,7 @@ window.SITE = {
         { id: "rims",    name: "Wheel Rims",        x: 31, y: 77 },
       ],
       spots: [
-        { id: "side",    price: 24000, status: "sold", brand: "ANTHROPIC", color: "#d97757" },
+        { id: "side",    price: 24000, status: "open" },
         { id: "arm",     price: 20000, status: "open" },
         { id: "cabroof", price: 16000, status: "open" },
         { id: "bucket",  price: 14000, status: "open" },
@@ -83,7 +83,7 @@ window.SITE = {
         { id: "track",   name: "Track Frame",   x: 42, y: 84 },
       ],
       spots: [
-        { id: "house",   price: 21000, status: "sold", brand: "OPENAI", color: "#10a37f" },
+        { id: "house",   price: 21000, status: "open" },
         { id: "boom",    price: 17000, status: "open" },
         { id: "cabroof", price: 14000, status: "open" },
         { id: "bucket",  price: 12000, status: "open" },
@@ -107,7 +107,7 @@ window.SITE = {
         { id: "rims",    name: "Rear Rims",    x: 33, y: 76 },
       ],
       spots: [
-        { id: "side",    price: 38000, status: "sold", brand: "NVIDIA", color: "#76b900" },
+        { id: "side",    price: 38000, status: "open" },
         { id: "hood",    price: 31000, status: "open" },
         { id: "loader",  price: 27000, status: "open" },
         { id: "boom",    price: 21000, status: "open" },
@@ -132,7 +132,7 @@ window.SITE = {
         { id: "track",   name: "Track Frame",   x: 44, y: 79 },
       ],
       spots: [
-        { id: "house",   price: 55000, status: "sold", brand: "COINBASE", color: "#0052ff" },
+        { id: "house",   price: 55000, status: "open" },
         { id: "cwt",     price: 44000, status: "open" },
         { id: "boom",    price: 37000, status: "open" },
         { id: "cabroof", price: 30000, status: "open" },
