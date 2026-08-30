@@ -431,6 +431,10 @@
           '" spot on the ' + market.city + ' ' + market.vehicle.model + '.\n\nBrand:\nIndustry:\nName:\n');
     } else {
       $('#mBid').value = sp.price;
+      const dep = Math.max(500, Math.round(sp.price * 0.05 / 100) * 100);
+      const d1 = $('#mDeposit'), d2 = $('#mBalance');
+      if (d1) d1.textContent = money(dep);
+      if (d2) d2.textContent = money(sp.price - dep);
       showPreview(logos[logoKey(market, sp)] || null);
     }
     modal.hidden = false;
@@ -445,20 +449,24 @@
     e.preventDefault();
     const f = new FormData(form);
     const hasLogo = !!logos[logoKey(market, current)];
+    const offer = Number(f.get('bid'));
+    const dep = Math.max(500, Math.round(offer * 0.05 / 100) * 100);
     const body =
-      'Hi,\n\nI want to claim the "' + currentZone.name + '" spot on the ' +
+      'Hi,\n\nI want to reserve the "' + currentZone.name + '" surface on the ' +
       market.city + ' ' + market.vehicle.model + ' ' + market.vehicle.trim + '.\n\n' +
       'Brand: ' + f.get('brand') + '\n' +
       'Industry: ' + f.get('industry') + '\n' +
-      'Name: ' + f.get('name') + '\n' +
+      'Contact: ' + f.get('name') + '\n' +
       'Email: ' + f.get('email') + '\n' +
-      'Bid: ' + money(Number(f.get('bid'))) + ' USD\n\n' +
+      'Offer: ' + money(offer) + ' USD (12 months)\n' +
+      'Reservation deposit (5%): ' + money(dep) + ' USD\n' +
+      'Balance on signature: ' + money(offer - dep) + ' USD by bank transfer\n\n' +
       (hasLogo
-        ? 'I previewed my logo on the site — please attach it to this email before sending.\n'
+        ? 'I previewed my logo on the site — please attach it to this email before sending.\n\n'
         : '') +
-      '\nThanks.\n';
+      'Please send the contract and wire instructions.\n\nThanks.\n';
     window.location.href = 'mailto:' + S.site.contactEmail +
-      '?subject=' + encodeURIComponent('Bid · ' + currentZone.name + ' · ' + market.city + ' — ' + f.get('brand')) +
+      '?subject=' + encodeURIComponent('Reservation · ' + currentZone.name + ' · ' + market.city + ' — ' + f.get('brand')) +
       '&body=' + encodeURIComponent(body);
   });
 

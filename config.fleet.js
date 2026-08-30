@@ -216,7 +216,7 @@ window.SITE = {
   },
 
   steps: [
-    { n: "01", title: "Pick an asset and a surface", text: "Five assets, 34 surfaces, every price on the marker. From USD 6,000 to USD 238,000." },
+    { n: "01", title: "Pick an asset and a surface", text: "Five assets, 34 surfaces, every price on the marker. Reserve with a 5% deposit; balance by transfer on signature." },
     { n: "02", title: "Upload your logo",            text: "Drop your file on this page and watch it land on the asset. Vector is best." },
     { n: "03", title: "We install it",               text: "Heavy-duty vinyl on the machines, automotive vinyl on the car, certified decals on the aircraft." },
     { n: "04", title: "Twelve months",               text: "The machines work, the jet flies, the car gets driven. Monthly report on all of it." },
@@ -254,6 +254,10 @@ window.SITE = {
       a: "The operation does, and it's earmarked for the aircraft reserve and the next machine. Sponsors buy exposure, not equity." },
     { q: "Why would an AI or crypto company sponsor an excavator?",
       a: "Not for the impressions — for the story. A logo on a 20-tonne Komatsu next to one on a HondaJet is the kind of thing people share. That reach costs a fraction of a normal campaign." },
+    { q: "How do I actually pay?",
+      a: "A 5% deposit holds your surface for 14 days while we agree terms — that is the only card-sized payment. The balance is paid by bank transfer against a signed contract and an invoice your accounting can deduct. No card fees on either side, and no processor sitting on a six-figure sponsorship." },
+    { q: "Is the deposit refundable?",
+      a: "Yes, in full, if the auction on that asset doesn't close or if we can't agree terms inside the 14 days. Nothing is bought on a half-funded auction, so nobody is left holding a deposit for an asset that never existed." },
     { q: "What happens if an auction doesn't close?",
       a: "That asset doesn't get bought. The deadline extends or every sponsor on it is refunded in full. Nothing gets spent halfway." },
     { q: "Which brands don't you take?",

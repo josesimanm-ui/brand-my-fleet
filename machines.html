@@ -389,7 +389,7 @@
     </button>
     <p class="modal__eyebrow" id="mEyebrow">Open surface</p>
     <h3 class="modal__title" id="mTitle">—</h3>
-    <p class="modal__price"><b id="mPrice">—</b> <span>opening price</span></p>
+    <p class="modal__price"><b id="mPrice">—</b> <span>opening price · 12 months</span></p>
 
     <form id="mForm" class="form">
       <!-- LOGO UPLOAD: previews live on the vehicle -->
@@ -409,9 +409,18 @@
         <input name="industry" required placeholder="Banking, telco, beer, retail…"></label>
       <label>Your name<input name="name" required placeholder="Who's writing"></label>
       <label>Email<input name="email" type="email" required placeholder="you@company.com"></label>
-      <label>Your bid (USD)<input name="bid" id="mBid" type="number" min="0" step="100" required></label>
-      <button class="btn btn--dark btn--full" type="submit">Send my bid</button>
-      <p class="form__note">Opens your email client with everything filled in. Nothing is charged now.</p>
+      <label>Your offer (USD) <span class="form__hint">— match or beat the opening price</span>
+        <input name="bid" id="mBid" type="number" min="0" step="100" required></label>
+      <div class="deposit">
+        <div class="deposit__row"><span>Reservation deposit (5%)</span><b id="mDeposit">—</b></div>
+        <div class="deposit__row"><span>Balance on signature</span><b id="mBalance">—</b></div>
+        <p class="deposit__note">The deposit holds this surface for 14 days while we agree
+        terms. Balance is paid by bank transfer against a signed contract and an invoice —
+        no card fees on either side. Deposit is fully refunded if the auction doesn't close.</p>
+      </div>
+      <button class="btn btn--dark btn--full" type="submit">Reserve this surface</button>
+      <p class="form__note">Nothing is charged here. We reply within 24h with the contract
+      and wire instructions.</p>
     </form>
 
     <div id="mSold" class="sold" hidden>
